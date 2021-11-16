@@ -6,9 +6,9 @@ public class Stringrecursion {
 	 System.out.println(recstring(s));
  }
  private static String recstring(String s) {
-	 if(s==null || s.length()<=1) 
+	 if(s==null || s.length()<=1) {
 		 return s;
-	 
+	 }
 	 
 	return recstring(s.substring(1))+s.charAt(0); 
  }
